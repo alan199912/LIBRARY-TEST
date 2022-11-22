@@ -1,4 +1,4 @@
-import { codeFormattingArrayList } from 'src/core/helpers/codeFormatting.helper';
+import { codeFormattingArrayList } from '../core/helpers/codeFormatting.helper';
 
 /**
  * está para obtener un solo array de navigation_simple_ts_array
