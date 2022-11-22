@@ -1,0 +1,93 @@
+<section class="section-example">
+  <app-viewer title="Con icono" [isNavCode]="true">
+    <div component class="dropdown-container">
+      <o-dropdown-icon component filterName="Mi perfil" [options]="options" (dataSelected)="getData($event)">
+        <span icon class="dropdown-user-icon ml-0">&nbsp;</span>
+      </o-dropdown-icon>
+    </div>
+    <pre appClipboard component-html class="code">
+        <button class="btn btn-clipboard">Copiar</button>
+        <code appPrism language="html">
+          {{ exampleDropdownIcon }}
+        </code>
+    </pre>
+    <pre appClipboard component-ts class="code">
+        <button class="btn btn-clipboard">Copiar</button>
+        <code appPrism>
+          {{ exampeDropdownIconTs }}
+        </code>
+    </pre>
+  </app-viewer>
+
+  <app-viewer title="Con icono y borde" [isNavCode]="true">
+    <div component class="dropdown-container">
+      <o-dropdown-icon
+        component
+        filterName="Mi perfil"
+        [options]="options"
+        [isBordered]="true"
+        (dataSelected)="getData($event)"
+      >
+        <span icon class="dropdown-user-icon ml-0">&nbsp;</span>
+      </o-dropdown-icon>
+    </div>
+    <pre appClipboard component-html class="code">
+        <button class="btn btn-clipboard">Copiar</button>
+        <code appPrism language="html">
+          {{ exampleDropdownIconBorder }}
+        </code>
+    </pre>
+    <pre appClipboard component-ts class="code">
+        <button class="btn btn-clipboard">Copiar</button>
+        <code appPrism>
+          {{ exampeDropdownIconTs }}
+        </code>
+    </pre>
+  </app-viewer>
+
+  <app-viewer title="Solo icono" [isNavCode]="true">
+    <div component class="dropdown-container">
+      <o-dropdown-icon component [options]="options" (dataSelected)="getData($event)">
+        <span icon class="dropdown-user-icon ml-0">&nbsp;</span>
+      </o-dropdown-icon>
+    </div>
+    <pre appClipboard component-html class="code">
+        <button class="btn btn-clipboard">Copiar</button>
+        <code appPrism language="html">
+          {{ exampleDropdownIconOnly }}
+        </code>
+    </pre>
+    <pre appClipboard component-ts class="code">
+        <button class="btn btn-clipboard">Copiar</button>
+        <code appPrism>
+          {{ exampeDropdownIconTs }}
+        </code>
+    </pre>
+  </app-viewer>
+
+  <app-viewer title="Selección múltiple" [isNavCode]="true">
+    <div component class="dropdown-container">
+      <o-dropdown-icon
+        component
+        filterName="Mi perfil"
+        [options]="options"
+        [isMultipleSelection]="true"
+        (dataSelected)="getData($event)"
+      >
+        <span icon class="dropdown-user-icon ml-0">&nbsp;</span>
+      </o-dropdown-icon>
+    </div>
+    <pre appClipboard component-html class="code">
+        <button class="btn btn-clipboard">Copiar</button>
+        <code appPrism language="html">
+          {{ exampleDropdownIconMultipleSelection }}
+        </code>
+    </pre>
+    <pre appClipboard component-ts class="code">
+        <button class="btn btn-clipboard">Copiar</button>
+        <code appPrism>
+          {{ exampeDropdownIconTs }}
+        </code>
+    </pre>
+  </app-viewer>
+</section>

@@ -1,0 +1,24 @@
+{
+  "name": "ngx-obelisco",
+  "version": "1.0.0",
+  "peerDependencies": {
+    "@angular/common": "^13.1.0",
+    "@angular/core": "^13.1.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alan199912/LIBRARY-TEST.git"
+  },
+  "release": {
+    "branches": [
+      "master"
+    ]
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "private": false
+}

@@ -1,0 +1,13 @@
+<a #card class="card" [routerLink]="route">
+  <div class="card-event-top">
+    <img oDefaultImage *ngIf="img" [src]="img" class="card-event-bg" [alt]="title" />
+    <div *ngIf="imgEvent" class="card-event-img">
+      <img oDefaultImage [src]="imgEvent" alt="descripción alternativa" />
+    </div>
+    <p *ngIf="eventName" class="card-event-name">{{ eventName }}</p>
+  </div>
+  <div class="card-body">
+    <p *ngIf="headline" class="card-headline">{{ headline }}</p>
+    <h4 class="card-title">{{ title }}</h4>
+  </div>
+</a>
