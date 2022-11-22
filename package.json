@@ -81,7 +81,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/alan199912/LIBRARY-TEST.git"
+    "url": "https://github.com/alan199912/LIBRARY-TEST.git",
+    "directory": "projects/ngx-obelisco"
   },
   "release": {
     "branches": [
