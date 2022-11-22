@@ -17,7 +17,7 @@ jobs:
         with:
           node-version: 'lts/*'
       - name: Build LIBRARY
-        run: cd projects/ngx-obelisco && npm run build ngx-obelisco
+        run: npm run build ngx-obelisco
       - name: Install dependencies
         run: npm ci
       - name: Release
