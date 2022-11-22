@@ -15,7 +15,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: 'lts/*'
+          node-version: '14.19.0'
       - name: Build LIBRARY
         run: npm install && npm run build ngx-obelisco
       - name: Install dependencies
