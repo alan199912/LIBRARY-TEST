@@ -1,6 +1,9 @@
 {
   "name": "ngx-obelisco",
   "version": "1.0.0",
+  "scripts": {
+    "build": "ng build ngx-obelisco"
+  },
   "peerDependencies": {
     "@angular/common": "^13.1.0",
     "@angular/core": "^13.1.0"
