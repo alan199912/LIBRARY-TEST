@@ -24,4 +24,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: cd dist/ngx-obelisco npx semantic-release
+        run: cd dist/ngx-obelisco && npx semantic-release
