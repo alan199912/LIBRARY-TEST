@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkngx_obelisco_demo=self.webpackChunkngx_obelisco_demo||[]).push([[37],{7037:(r,o,t)=>{t.r(o),t.d(o,{GetStartedModule:()=>l});var n=t(6362),d=t(9349);let l=(()=>{class e{}return e.\u0275fac=function(a){return new(a||e)},e.\u0275mod=d.oAB({type:e}),e.\u0275inj=d.cJS({imports:[n.ez]}),e})()}}]);
+//# sourceMappingURL=37.825caf64be438c56.js.map
