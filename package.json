@@ -12,7 +12,8 @@
     "style:prettier": "prettier --config .prettierrc --write projects/ngx-obelisco/src/**.*{ts,html,scss}",
     "lint": "ng lint",
     "prepare": "husky install",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "deploy": "ng build --configuration production --base-href='https://alan199912.github.io/LIBRARY-TEST/' --source-map --build-optimizer"
   },
   "private": false,
   "dependencies": {
