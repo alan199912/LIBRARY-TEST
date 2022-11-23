@@ -20,8 +20,15 @@ jobs:
         run: npm install && npm run build ngx-obelisco --prod
       - name: Install dependencies
         run: npm ci
-      - name: Release
+      - name: Release on build folder
+        uses: softprops/action-gh-release@v1
+        with:
+          files: dist/projects/ngx-obelisco
+          draft: true
+          prerelease: true
+          token: ${{ secrets.GITHUB_TOKEN }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
         run: npx semantic-release
