@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkngx_obelisco_demo=self.webpackChunkngx_obelisco_demo||[]).push([[37],{7037:(r,o,t)=>{t.r(o),t.d(o,{GetStartedModule:()=>l});var n=t(9808),d=t(1223);let l=(()=>{class e{}return e.\u0275fac=function(a){return new(a||e)},e.\u0275mod=d.oAB({type:e}),e.\u0275inj=d.cJS({imports:[n.ez]}),e})()}}]);
