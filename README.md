@@ -1,6 +1,6 @@
 # NgxObelisco
 
-[![Versión de Obelisco en npm](https://img.shields.io/npm/v/@gcba/obelisco?label=NgxObelisco%20en%20npm&logo=npm)](https://www.npmjs.com/package/@gcba/obelisco)
+[![Versión de Obelisco en npm](https://img.shields.io/npm/v/@gcba/obelisco?label=NgxObelisco%20en%20npm&logo=npm)](https://www.npmjs.com/package/@gcba/ngx-obelisco)
 
 NgxObelisco es una libreria de Angular basado en el sistema de diseño Obelisco y en componentes para los productos digitales de la ciudad de Buenos Aires.
 
@@ -15,7 +15,7 @@ Es recomendable usar este sistema para definir la versión a usar y poder actual
 
 Para instalarlo en un proyecto que ya usa npm, hay que ejecutar:
 
-```
+```js
 npm install @gcba/ngx-obelisco
 ```
 
@@ -23,7 +23,7 @@ npm install @gcba/ngx-obelisco
 
 Si NgxObelisco ya está instalado en el proyecto y necesitás actualizarlo a la última versión, en el directorio del proyecto hay que ejecutar:
 
-```
+```js
 npm update @gcba/ngx-obelisco
 ```
 
@@ -37,19 +37,19 @@ Obelisco utiliza la librería de Boxicons que se puede instalar de las siguiente
 
 Utilizando el paquete npm:
 
-```
+```js
 npm install boxicons
 ```
 
 Para utilizarlas con su CDN podemos hacerlo de la siguiente forma:
 
-```
-<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+```html
+<link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
 ```
 
 Importando en el archivo angular.json de la siguiente manera:
 
-```
+```json
 "styles": [
   "src/styles.scss",
   "node_modules/boxicons/css/boxicons.min.css"
@@ -60,7 +60,7 @@ Importando en el archivo angular.json de la siguiente manera:
 
 Obelisco requiere las tipografías **Nunito** y **Open sans** disponibles en google fonts, para utilizarlas con su CDN podemos hacerlo de la siguiente forma:
 
-```
+```html
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet"></link>
 ```
@@ -69,7 +69,7 @@ Obelisco requiere las tipografías **Nunito** y **Open sans** disponibles en goo
 
 Para importar el scss, podemos hacerlo en el archivo angular.json de la siguiente forma:
 
-```
+```json
 "styles": [
   "src/styles.scss",
   "node_modules/ngx-obelisco/src/lib/scss/obelisco.scss"
@@ -82,13 +82,13 @@ Como NgxObelisco está construido sobre Obelisco y bootstrap 4, [debemos tener e
 
 Un ejemplo de cómo importalas en index.html es:
 
-```
+```js
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 ```
 
-> **Importante**<br>
+> **Importante** <br>
 > Revisá las [versiones y herramientas aceptadas](https://asijira-confluence.buenosaires.gob.ar/display/ASI/Versiones++y+Herramientas+aceptadas+por+la+ASI) por la **Agencia de Seguridad Informática (ASI)** del Gobierno de la Ciudad antes de elegir una versión de estas dependencias.
 
 ## Mantenimiento y colaboración
