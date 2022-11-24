@@ -47,11 +47,41 @@ Para utilizarlas con su CDN podemos hacerlo de la siguiente forma:
 <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 ```
 
+Importando en el archivo angular.json de la siguiente manera:
+
+```
+"styles": [
+  "src/styles.scss",
+  "node_modules/boxicons/css/boxicons.min.css"
+],
+```
+
+### Tipografías
+
+Obelisco requiere las tipografías **Nunito** y **Open sans** disponibles en google fonts, para utilizarlas con su CDN podemos hacerlo de la siguiente forma:
+
+```
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet"></link>
+```
+
+### Estilos
+
+Para importar el scss, podemos hacerlo en el archivo angular.json de la siguiente forma:
+
+```
+"styles": [
+  "src/styles.scss",
+  "node_modules/ngx-obelisco/src/lib/scss/obelisco.scss"
+]
+```
+
 ### Javascript
 
 Como NgxObelisco está construido sobre Obelisco y bootstrap 4, [debemos tener esas dependencias](https://getbootstrap.com/docs/4.6/getting-started/introduction/#js).
 
-Un ejemplo de cómo importalas es:
+Un ejemplo de cómo importalas en index.html es:
+
 ```
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
