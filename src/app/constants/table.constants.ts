@@ -55,7 +55,7 @@ export const TABLA_INTERFACE_COLUMN = `
     value: string;
   }`;
 
-const formattedTableExampleTsCode = (code: any) => `
+const formattedTableExampleTsCode = (code: any, codeColumn: any) => `
   import { Component  } from '@angular/core';
   @Component({
     selector: 'app-example',
@@ -65,7 +65,7 @@ const formattedTableExampleTsCode = (code: any) => `
     public dataSource = ${codeFormattingArrayList(code)}
     ];
 
-    public columns = ${codeFormattingArrayList(code)}
+    public columns = ${codeFormattingArrayList(codeColumn)}
     ];
   }`;
 
@@ -127,7 +127,7 @@ export const COLUMNS_TABLE_EXAMPLE = [
 
 export const TABLE_EXAMPLE_NORMAL_HTML = `<o-table [displayedColumns]="columns" [dataSource]="dataSource"></o-table>`;
 
-export const TABLE_EXAMPLE_NORMAL_TS = formattedTableExampleTsCode(DATA_SOURCE_TABLE_EXAMPLE);
+export const TABLE_EXAMPLE_NORMAL_TS = formattedTableExampleTsCode(DATA_SOURCE_TABLE_EXAMPLE, COLUMNS_TABLE_EXAMPLE);
 
 export const TABLE_EXAMPLE_BORDERED_HTML = `
   <o-table

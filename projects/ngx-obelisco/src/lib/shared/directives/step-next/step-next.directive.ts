@@ -21,7 +21,7 @@ export class StepNextDirective implements OnInit, OnDestroy {
     this.stepService.stopEmmiter.pipe(takeUntil(this.onDestroy$)).subscribe(() => {
       this.stepService.stop();
 
-      this.renderer.setAttribute(this.element.nativeElement, 'disabled', 'true');
+      this.renderer.setProperty(this.element.nativeElement, 'disabled', true);
     });
   }
 

@@ -95,10 +95,10 @@ export class OTableComponent implements OnInit, AfterViewInit {
 
   public allSelected($event: any): void {
     if (!$event.checked) {
-      this.checkbox.map((e) => this.renderer.setAttribute(e.nativeElement, 'checked', 'false'));
+      this.checkbox.map((e) => this.renderer.setProperty(e.nativeElement, 'checked', false));
       this.DataSelectedArr = [];
     } else {
-      this.checkbox.map((e) => this.renderer.setAttribute(e.nativeElement, 'checked', 'true'));
+      this.checkbox.map((e) => this.renderer.setProperty(e.nativeElement, 'checked', true));
       this.DataSelectedArr = this.dataSource;
     }
 

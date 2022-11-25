@@ -18,10 +18,10 @@ export class StepPreviousDirective implements OnInit, OnDestroy {
   }
 
   public ngOnInit(): void {
-    this.renderer.setAttribute(this.element.nativeElement, 'disabled', 'true');
+    this.renderer.setProperty(this.element.nativeElement, 'disabled', true);
 
     this.stepService.isFirstStep.pipe(takeUntil(this.onDestroy$)).subscribe((event) => {
-      this.renderer.setAttribute(this.element.nativeElement, 'disabled', `${event}`);
+      this.renderer.setProperty(this.element.nativeElement, 'disabled', event);
     });
 
     this.stepService.stopEmmiter.pipe(takeUntil(this.onDestroy$)).subscribe(() => {

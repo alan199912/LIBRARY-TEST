@@ -198,6 +198,7 @@ export const FOOTER_EXAMPLE_NETWORKS_TS = `
         url: 'https://www.youtube.com/user/GCBA',
         icon: 'bxl-youtube'
       },
+      {
         title: 'LinkedIn',
         url: 'https://ar.linkedin.com/company/gobierno-de-la-ciudad-de-buenos-aires',
         icon: 'bxl-linkedin'
@@ -290,6 +291,7 @@ export const FOOTER_EXAMPLE_ALL_TS = `
         url: 'https://www.youtube.com/user/GCBA',
         icon: 'bxl-youtube'
       },
+      {
         title: 'LinkedIn',
         url: 'https://ar.linkedin.com/company/gobierno-de-la-ciudad-de-buenos-aires',
         icon: 'bxl-linkedin'
