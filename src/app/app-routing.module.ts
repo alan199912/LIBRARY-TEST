@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { GetStartedComponent } from './modules/get-started/get-started.component';
 import { SectionComponentsComponent } from './modules/section-components/section-components.component';
 
@@ -25,7 +25,7 @@ const routes: Routes = [
 @NgModule({
   imports: [
     RouterModule.forRoot(routes, {
-      useHash: true
+      preloadingStrategy: PreloadAllModules
     })
   ],
   exports: [RouterModule]
