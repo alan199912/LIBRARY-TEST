@@ -1,7 +1,7 @@
 import { BestPracticesComponent } from './../../../components/best-practices/best-practices.component';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { OBreadcrumbComponent, ONavModule } from 'projects/ngx-obelisco/src/public-api';
+import { OBreadcrumbComponent, ONavModule, OTableComponent } from 'projects/ngx-obelisco/src/public-api';
 
 import { BreadcrumbRoutingModule } from './breadcrumb-routing.module';
 import { BreadcrumbComponent } from './breadcrumb.component';
@@ -22,7 +22,8 @@ import { PrismDirective } from 'src/app/shared/directives/prism/prism.directive'
     ViewerComponent,
     OBreadcrumbComponent,
     ClipboardDirective,
-    PrismDirective
+    PrismDirective,
+    OTableComponent
   ]
 })
 export class BreadcrumbModule {}

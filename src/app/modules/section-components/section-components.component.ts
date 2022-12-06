@@ -27,6 +27,18 @@ export class SectionComponentsComponent implements AfterViewInit, OnDestroy {
         next: (event: Event) => {
           event = event as RouterEvent;
           const url = event.url.split('/').splice(1);
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+
+          const fragment = url[2]?.split('#')[1];
+
+          if (fragment) {
+            const element = document.querySelector(`#${fragment}`) as HTMLElement;
+            if (element) {
+              element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              window.scrollBy(0, element.getBoundingClientRect().top - 120);
+              history.pushState({}, '', url[0] + '/' + url[1] + '/' + url[2].split('#')[0]);
+            }
+          }
 
           url.forEach((item) => {
             if (item !== 'components') {

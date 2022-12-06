@@ -19,6 +19,23 @@ export const BREADCRUMB_BEST_PRACTICES = [
   '<strong>Empiece con la palabra "Inicio"</strong> como primer enlace de las rutas de navegación.'
 ];
 
+export const DATA_SOURCE_BREADCRUMB = [
+  {
+    name: 'actualRoute',
+    description: 'Se utiliza para agregar el nombre de la ruta actual al breadcrumb. No va a tener un link.'
+  },
+  {
+    name: 'routes',
+    description:
+      'Se utiliza para agregar las rutas que se quieren agregar al breadcrumb. Cada ruta tiene que tener un nombre o un id, también se puede agregar una ruta específica'
+  },
+  {
+    name: 'url',
+    description:
+      'Se utiliza para agregar una url generica al breadcrumb. Para que lo puedan utilizar las <strong>routes</strong>'
+  }
+];
+
 export const BREADCRUMB_INTERFACE1 = `
   interface Breadcrumb {
     actualRoute: BreadcrumbRoute;

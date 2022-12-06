@@ -1,5 +1,5 @@
 <section class="section-example">
-  <app-viewer title="Barra de Progreso con botones y directiva">
+  <app-viewer title="Barra de Progreso con botones y directiva" id="example-directive">
     <app-progress-bar-demo component></app-progress-bar-demo>
     <pre appClipboard component-html class="code">
       <button class="btn btn-clipboard">Copiar</button>
@@ -9,7 +9,7 @@
     </pre>
   </app-viewer>
 
-  <app-viewer title="Barra de Progreso con botones y funcionalidad" [isNavCode]="true">
+  <app-viewer title="Barra de Progreso con botones y funcionalidad" [isNavCode]="true" id="example-functionality">
     <div component>
       <o-progress-bar [isSteps]="true" [currentStep]="2" color="success"></o-progress-bar>
       <button class="btn btn-sm btn-link mr-2" (click)="previousStep()">Anterior</button>
