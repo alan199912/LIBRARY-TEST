@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CARD_EVENT_EXAMPLE } from 'src/app/constants/card.constants';
+import { CARD_EVENT_EXAMPLE_HTML, CARD_EVENT_EXAMPLE_TS } from 'src/app/constants/card.constants';
 
 @Component({
   selector: 'app-card-event-examples',
@@ -7,5 +7,8 @@ import { CARD_EVENT_EXAMPLE } from 'src/app/constants/card.constants';
   styleUrls: ['./card-event-examples.component.scss']
 })
 export class CardEventExamplesComponent {
-  public cardExample = CARD_EVENT_EXAMPLE;
+  public cardExampleHtml = CARD_EVENT_EXAMPLE_HTML;
+  public cardExampleTs = CARD_EVENT_EXAMPLE_TS;
+  public initialDate = new Date('January 18');
+  public finalDate = new Date('February 1');
 }

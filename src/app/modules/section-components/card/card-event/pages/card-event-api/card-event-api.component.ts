@@ -18,8 +18,12 @@ export class CardEventApiComponent {
       description: 'Se utiliza para colocar el nombre del evento del card.'
     },
     {
-      name: '@Input() <br/> headline: string',
-      description: 'Se utiliza para colocar el subtítulo o encabezado del card.'
+      name: '@Input() <br/> initialDate: Date',
+      description: 'Se utiliza para colocar la fecha en la que inicia el evento.'
+    },
+    {
+      name: '@Input() <br/> finalDate: Date',
+      description: 'Se utiliza para colocar la fecha en la que finaliza el evento.'
     },
     {
       name: '@Input() <br/> img: string',

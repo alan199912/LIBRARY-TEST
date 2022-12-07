@@ -7,7 +7,10 @@
     <p *ngIf="eventName" class="card-event-name">{{ eventName }}</p>
   </div>
   <div class="card-body">
-    <p *ngIf="headline" class="card-headline">{{ headline }}</p>
+    <p *ngIf="initialDate" class="card-headline">
+      {{ initialDate | numberDayMonthFormatPipe }}
+      <ng-container *ngIf="finalDate">al {{ finalDate | numberDayMonthFormatPipe }}</ng-container>
+    </p>
     <h4 class="card-title">{{ title }}</h4>
   </div>
 </a>

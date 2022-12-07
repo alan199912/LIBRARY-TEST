@@ -57,6 +57,7 @@ export * from './lib/shared/directives/alert/alert.directive';
 
 export * from './lib/shared/pipes/day-month-format/day-month-format.pipe';
 export * from './lib/shared/pipes/hours-format/hours-format.pipe';
+export * from './lib/shared/pipes/number-day-month-format/number-day-month-format.pipe';
 
 export * from './lib/core/models/access.models';
 export * from './lib/core/models/breadcrumb.models';

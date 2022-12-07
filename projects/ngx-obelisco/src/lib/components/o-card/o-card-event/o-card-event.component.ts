@@ -8,6 +8,8 @@ import { AfterViewInit, Component, ElementRef, Input, Renderer2, ViewChild } fro
 export class OCardEventComponent implements AfterViewInit {
   @Input() public title!: string;
   @Input() public eventName!: string;
+  @Input() public initialDate!: Date;
+  @Input() public finalDate!: Date;
   @Input() public headline!: string;
   @Input() public img!: string;
   @Input() public imgEvent!: string;

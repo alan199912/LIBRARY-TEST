@@ -190,15 +190,29 @@ export const CARD_NOTICE_EXAMPLE_TS = `
   }
 `;
 
-export const CARD_EVENT_EXAMPLE = `
+export const CARD_EVENT_EXAMPLE_HTML = `
   <o-card-event
     title="Comienza una nueva edición de actividades en polideportivos"
     eventName="Actividades y clases en polideportivos"
-    headline="18 de Enero al 1 de Febrero"
+    [initialDate]="initialDate"
+    [finalDate]="finalDate"
     img="https://gcba.github.io/Obelisco/cards/paseobajo-wide.png"
     imgEvent="https://gcba.github.io/Obelisco/cards/paseobajo-thumb.png"
     route="/components"
   ></o-card-event>
+`;
+
+export const CARD_EVENT_EXAMPLE_TS = `
+  import { Component } from '@angular/core';
+
+  @Component({
+    selector: 'app-example',
+    template: './app-example.component.html',
+  })
+  export class ExampleComponent {
+    public initialDate = new Date('January 18');
+    public finalDate = new Date('February 1');
+  }
 `;
 
 export const CARD_EVENT_SIMPLE_EXAMPLE_HTML = `

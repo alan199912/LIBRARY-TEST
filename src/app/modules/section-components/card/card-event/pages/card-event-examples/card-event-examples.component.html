@@ -1,10 +1,11 @@
 <section class="section-example">
-  <app-viewer title="Simple">
+  <app-viewer title="Simple" [isNavCode]="true">
     <div component style="width: 500px">
       <o-card-event
         title="Comienza una nueva edición de actividades en polideportivos"
         eventName="Actividades y clases en polideportivos"
-        headline="18 de Enero al 1 de Febrero"
+        [initialDate]="initialDate"
+        [finalDate]="finalDate"
         img="https://gcba.github.io/Obelisco/cards/evento-bg.jpg"
         imgEvent="https://gcba.github.io/Obelisco/cards/evento-thumb.jpg"
         route="/components"
@@ -13,7 +14,11 @@
     </div>
     <pre appClipboard component-html class="code">
       <button class="btn btn-clipboard">Copiar</button>
-      <code appPrism language="html">{{ cardExample }}</code>
+      <code appPrism language="html">{{ cardExampleHtml }}</code>
+    </pre>
+    <pre appClipboard component-ts class="code">
+      <button class="btn btn-clipboard">Copiar</button>
+      <code appPrism>{{ cardExampleTs }}</code>
     </pre>
   </app-viewer>
 </section>

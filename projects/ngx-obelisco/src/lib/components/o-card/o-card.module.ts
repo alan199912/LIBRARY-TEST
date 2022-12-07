@@ -13,6 +13,7 @@ import { OCardSimpleHorizontalComponent } from './o-card-simple-horizontal/o-car
 import { OCardSimpleComponent } from './o-card-simple/o-card-simple.component';
 import { DayMonthFormatPipe } from '../../shared/pipes/day-month-format/day-month-format.pipe';
 import { HoursFormatPipe } from '../../shared/pipes/hours-format/hours-format.pipe';
+import { NumberDayMonthFormatPipe } from '../../shared/pipes/number-day-month-format/number-day-month-format.pipe';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import { HoursFormatPipe } from '../../shared/pipes/hours-format/hours-format.pi
     DayMonthFormatPipe,
     HoursFormatPipe
   ],
-  imports: [CommonModule, RouterModule, DefaultImageDirective],
+  imports: [CommonModule, RouterModule, DefaultImageDirective, NumberDayMonthFormatPipe],
   exports: [
     OCardSimpleHorizontalComponent,
     OCardContainerComponent,
