@@ -1,7 +1,9 @@
 import { BestPracticesComponent } from './../../../components/best-practices/best-practices.component';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { OBreadcrumbComponent, ONavModule, OTableComponent } from 'projects/ngx-obelisco/src/public-api';
+import { OBreadcrumbComponent } from 'projects/ngx-obelisco/breadcrumb';
+import { ONavModule } from 'projects/ngx-obelisco/nav';
+import { OTableComponent } from 'projects/ngx-obelisco/table';
 
 import { BreadcrumbRoutingModule } from './breadcrumb-routing.module';
 import { BreadcrumbComponent } from './breadcrumb.component';

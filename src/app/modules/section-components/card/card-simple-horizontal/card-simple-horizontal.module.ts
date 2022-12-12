@@ -6,7 +6,9 @@ import { CardSimpleHorizontalComponent } from './card-simple-horizontal.componen
 import { CardSimpleHorizontalOverviewComponent } from './pages/card-simple-horizontal-overview/card-simple-horizontal-overview.component';
 import { CardSimpleHorizontalApiComponent } from './pages/card-simple-horizontal-api/card-simple-horizontal-api.component';
 import { CardSimpleHorizontalExamplesComponent } from './pages/card-simple-horizontal-examples/card-simple-horizontal-examples.component';
-import { OCardModule, ONavModule, OTableComponent } from 'projects/ngx-obelisco/src/public-api';
+import { OCardModule } from 'projects/ngx-obelisco/card';
+import { ONavModule } from 'projects/ngx-obelisco/nav';
+import { OTableComponent } from 'projects/ngx-obelisco/table';
 import { BestPracticesComponent } from 'src/app/components/best-practices/best-practices.component';
 import { BadPracticesComponent } from 'src/app/components/bad-practices/bad-practices.component';
 import { ViewerComponent } from 'src/app/components/viewer/viewer.component';

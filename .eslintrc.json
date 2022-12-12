@@ -1,6 +1,6 @@
 {
   "root": true,
-  "ignorePatterns": ["projects/ngx-obelisco/src/lib/scss/**"],
+  "ignorePatterns": ["projects/ngx-obelisco/scss/**"],
   "overrides": [
     {
       "files": ["*.ts"],

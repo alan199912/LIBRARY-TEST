@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { NavigationRoutingModule } from './navigation-routing.module';
 import { NavigationComponent } from './navigation.component';
-import { ONavModule } from 'projects/ngx-obelisco/src/public-api';
+import { ONavModule } from 'projects/ngx-obelisco/nav';
 
 @NgModule({
   declarations: [NavigationComponent],

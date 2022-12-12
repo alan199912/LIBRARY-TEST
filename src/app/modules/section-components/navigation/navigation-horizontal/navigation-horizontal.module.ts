@@ -6,7 +6,8 @@ import { NavigationHorizontalComponent } from './navigation-horizontal.component
 import { NavigationHorizontalOverviewComponent } from './pages/navigation-horizontal-overview/navigation-horizontal-overview.component';
 import { NavigationHorizontalApiComponent } from './pages/navigation-horizontal-api/navigation-horizontal-api.component';
 import { NavigationHorizontalExamplesComponent } from './pages/navigation-horizontal-examples/navigation-horizontal-examples.component';
-import { ONavModule, OTableComponent } from 'projects/ngx-obelisco/src/public-api';
+import { ONavModule } from 'projects/ngx-obelisco/nav';
+import { OTableComponent } from 'projects/ngx-obelisco/table';
 import { BestPracticesComponent } from 'src/app/components/best-practices/best-practices.component';
 import { BadPracticesComponent } from 'src/app/components/bad-practices/bad-practices.component';
 import { ViewerComponent } from 'src/app/components/viewer/viewer.component';

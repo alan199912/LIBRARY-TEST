@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { CardRoutingModule } from './card-routing.module';
 import { CardComponent } from './card.component';
-import { ONavModule } from 'projects/ngx-obelisco/src/public-api';
+import { ONavModule } from 'projects/ngx-obelisco/nav';
 
 @NgModule({
   declarations: [CardComponent],

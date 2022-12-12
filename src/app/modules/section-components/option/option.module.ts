@@ -1,6 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { ONavModule, OOptionComponent, OTableComponent } from 'projects/ngx-obelisco/src/public-api';
+import { OOptionComponent } from 'projects/ngx-obelisco/option';
+import { ONavModule } from 'projects/ngx-obelisco/nav';
+import { OTableComponent } from 'projects/ngx-obelisco/table';
 import { BadPracticesComponent } from 'src/app/components/bad-practices/bad-practices.component';
 import { BestPracticesComponent } from 'src/app/components/best-practices/best-practices.component';
 import { ViewerComponent } from 'src/app/components/viewer/viewer.component';

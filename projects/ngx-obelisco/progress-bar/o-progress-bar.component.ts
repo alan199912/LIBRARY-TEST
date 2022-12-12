@@ -1,9 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Input, OnDestroy, OnInit, Output } from '@angular/core';
 import { Subject, takeUntil } from 'rxjs';
-import { AbstractStep } from '../../core/abstracts/step.abstracts';
-import { Colors } from '../../core/models/colors.models';
-import { StepService } from '../../core/services/step/step.service';
+import { AbstractStep } from '../core/abstracts/step.abstracts';
+import { Colors } from './models/colors.models';
+import { StepService } from '../services/step/step.service';
 
 const MAX_WIDTH: number = 100;
 const INICIAL_STEP: number = 0;

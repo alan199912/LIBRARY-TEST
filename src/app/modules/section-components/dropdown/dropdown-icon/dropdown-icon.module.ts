@@ -2,7 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { DropdownIconRoutingModule } from './dropdown-icon-routing.module';
-import { ONavModule, OTableComponent, ODropdownModule } from 'projects/ngx-obelisco/src/public-api';
+import { ODropdownModule } from 'projects/ngx-obelisco/dropdown';
+import { ONavModule } from 'projects/ngx-obelisco/nav';
+import { OTableComponent } from 'projects/ngx-obelisco/table';
 
 import { DropdownIconComponent } from './dropdown-icon.component';
 import { BadPracticesComponent } from 'src/app/components/bad-practices/bad-practices.component';

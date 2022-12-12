@@ -2,7 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { CollapseSimpleRoutingModule } from './collapse-simple-routing.module';
-import { OCollapseModule, ONavModule, OTableComponent } from 'projects/ngx-obelisco/src/public-api';
+import { OCollapseModule } from 'projects/ngx-obelisco/collapse';
+import { ONavModule } from 'projects/ngx-obelisco/nav';
+import { OTableComponent } from 'projects/ngx-obelisco/table';
 
 import { CollapseSimpleOverviewComponent } from './pages/collapse-simple-overview/collapse-simple-overview.component';
 import { CollapseSimpleApiComponent } from './pages/collapse-simple-api/collapse-simple-api.component';

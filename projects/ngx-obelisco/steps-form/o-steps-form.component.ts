@@ -1,9 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Input, OnDestroy, OnInit, Output } from '@angular/core';
 import { Subject, takeUntil } from 'rxjs';
-import { AbstractStep } from '../../core/abstracts/step.abstracts';
-import { StepForm } from '../../core/models/step-form.models';
-import { StepService } from './../../core/services/step/step.service';
+import { AbstractStep } from '../core/abstracts/step.abstracts';
+import { StepForm } from '../core/models/step-form.models';
+import { StepService } from '../services/step/step.service';
 
 @Component({
   selector: 'o-steps-form',

@@ -28,7 +28,7 @@
             "inlineStyleLanguage": "scss",
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
-              "projects/ngx-obelisco/src/lib/scss/obelisco.scss",
+              "projects/ngx-obelisco/scss/obelisco.scss",
               "src/styles.scss",
               "node_modules/prismjs/themes/prism.css"
             ],
@@ -112,7 +112,7 @@
         }
       },
       "root": "projects/ngx-obelisco",
-      "sourceRoot": "projects/ngx-obelisco/src",
+      "sourceRoot": "projects/ngx-obelisco",
       "prefix": "o",
       "architect": {
         "build": {
@@ -133,7 +133,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/ngx-obelisco/src/test.ts",
+            "main": "projects/ngx-obelisco/test.ts",
             "tsConfig": "projects/ngx-obelisco/tsconfig.spec.json",
             "karmaConfig": "projects/ngx-obelisco/karma.conf.js"
           }

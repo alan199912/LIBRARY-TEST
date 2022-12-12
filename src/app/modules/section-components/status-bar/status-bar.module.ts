@@ -1,13 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import {
-  ONavModule,
-  OProgressBarComponent,
-  OStatusBarComponent,
-  OTableComponent,
-  StepNextDirective,
-  StepPreviousDirective
-} from 'projects/ngx-obelisco/src/public-api';
+import { StepNextDirective } from 'projects/ngx-obelisco/shared/directives/step-next';
+import { StepPreviousDirective } from 'projects/ngx-obelisco/shared/directives/step-previous';
+import { OStatusBarComponent } from 'projects/ngx-obelisco/status-bar';
+import { ONavModule } from 'projects/ngx-obelisco/nav';
+import { OTableComponent } from 'projects/ngx-obelisco/table';
 
 import { StatusBarRoutingModule } from './status-bar-routing.module';
 import { StatusBarComponent } from './status-bar.component';

@@ -6,7 +6,9 @@ import { CardContainerOverviewComponent } from './pages/card-container-overview/
 import { CardContainerApiComponent } from './pages/card-container-api/card-container-api.component';
 import { CardContainerExamplesComponent } from './pages/card-container-examples/card-container-examples.component';
 import { CardContainerComponent } from './card-container.component';
-import { OCardModule, ONavModule, OTableComponent } from 'projects/ngx-obelisco/src/public-api';
+import { OCardModule } from 'projects/ngx-obelisco/card';
+import { ONavModule } from 'projects/ngx-obelisco/nav';
+import { OTableComponent } from 'projects/ngx-obelisco/table';
 import { BestPracticesComponent } from 'src/app/components/best-practices/best-practices.component';
 import { BadPracticesComponent } from 'src/app/components/bad-practices/bad-practices.component';
 import { ViewerComponent } from 'src/app/components/viewer/viewer.component';

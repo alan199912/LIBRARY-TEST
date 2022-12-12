@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CollapseInfoRoutingModule } from './collapse-info-routing.module';
-import { OCollapseModule, ONavModule, OTableComponent } from 'projects/ngx-obelisco/src/public-api';
+import { OCollapseModule } from 'projects/ngx-obelisco/collapse';
+import { ONavModule } from 'projects/ngx-obelisco/nav';
+import { OTableComponent } from 'projects/ngx-obelisco/table';
 
 import { CollapseInfoComponent } from './collapse-info.component';
 import { CollapseInfoOverviewComponent } from './pages/collapse-info-overview/collapse-info-overview.component';
