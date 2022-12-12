@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { BreadcrumbService } from 'projects/ngx-obelisco/services/breadcrumb';
+import { Component, Inject, OnInit } from '@angular/core';
+import { BreadcrumbService } from 'projects/ngx-obelisco/services/breadcrumb/breadcrumb.service';
 import { BREADCRUMB_EXAMPLE_TS } from 'src/app/constants/breadcrumb.constants';
 
 @Component({
@@ -9,7 +9,7 @@ import { BREADCRUMB_EXAMPLE_TS } from 'src/app/constants/breadcrumb.constants';
 })
 export class BreadcrumbExamplesComponent implements OnInit {
   public exampleTS = BREADCRUMB_EXAMPLE_TS;
-  constructor(private readonly breadcrumb: BreadcrumbService) {}
+  constructor(@Inject(BreadcrumbService) private readonly breadcrumb: BreadcrumbService) {}
 
   ngOnInit(): void {
     this.breadcrumb.breadcrumb$.next({

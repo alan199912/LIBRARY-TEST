@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { StepNextDirective } from 'projects/ngx-obelisco/shared/directives/step-next';
-import { StepPreviousDirective } from 'projects/ngx-obelisco/shared/directives/step-previous';
+import { StepNextDirective } from 'projects/ngx-obelisco/shared/directives/step-next/step-next.directive';
+import { StepPreviousDirective } from 'projects/ngx-obelisco/shared/directives/step-previous/step-previous.directive';
 import { OStatusBarComponent } from 'projects/ngx-obelisco/status-bar';
 import { ONavModule } from 'projects/ngx-obelisco/nav';
 import { OTableComponent } from 'projects/ngx-obelisco/table';

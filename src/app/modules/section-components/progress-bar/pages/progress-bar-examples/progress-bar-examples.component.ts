@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { StepService } from 'projects/ngx-obelisco/src/public-api';
+import { Component, Inject, OnInit } from '@angular/core';
+import { StepService } from 'projects/ngx-obelisco/services/step/step.service';
 import {
   PROGRESS_BAR_EXAMPLE_DIRECTIVE,
   PROGRESS_BAR_EXAMPLE_FUNCIONALITY_HTML,
@@ -20,7 +20,7 @@ export class ProgressBarExamplesComponent implements OnInit {
   public exampleNoSteps = PROGRESS_BAR_EXAMPLE_NO_STEPS;
   public exampleColors = PROGRESS_BAR_EXAMPLE_COLORS;
 
-  constructor(private readonly progressBarService: StepService) {}
+  constructor(@Inject(StepService) private readonly progressBarService: StepService) {}
 
   public ngOnInit(): void {
     this.progressBarService.initialize();

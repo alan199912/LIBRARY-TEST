@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { StepService } from 'projects/ngx-obelisco/src/public-api';
+import { Component, Inject, OnInit } from '@angular/core';
+import { StepService } from 'projects/ngx-obelisco/services/step/step.service';
 import {
   STEPS_FORM_EXAMPLE_DIRECTIVE_HTML,
   STEPS_FORM_EXAMPLE_DIRECTIVE_TS,
@@ -34,7 +34,7 @@ export class StepsFormExamplesComponent implements OnInit {
     return this.stepsForm.indexOf(this.actualStep) + 1;
   }
 
-  constructor(private readonly stepsFormService: StepService) {}
+  constructor(@Inject(StepService) private readonly stepsFormService: StepService) {}
 
   public ngOnInit(): void {
     this.stepsFormService.initialize();
