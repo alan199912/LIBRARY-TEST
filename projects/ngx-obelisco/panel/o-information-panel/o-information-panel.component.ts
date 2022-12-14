@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { PanelInformation } from 'ngx-obelisco/core';
+import { PanelInformation } from 'ngx-obelisco/core/models';
 
 @Component({
   selector: 'o-information-panel',

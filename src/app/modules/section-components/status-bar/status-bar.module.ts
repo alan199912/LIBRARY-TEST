@@ -1,7 +1,5 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { StepNextDirective } from 'projects/ngx-obelisco/shared/directives/step-next/step-next.directive';
-import { StepPreviousDirective } from 'projects/ngx-obelisco/shared/directives/step-previous/step-previous.directive';
 import { OStatusBarComponent } from 'projects/ngx-obelisco/status-bar';
 import { ONavModule } from 'projects/ngx-obelisco/nav';
 import { OTableComponent } from 'projects/ngx-obelisco/table';
@@ -16,6 +14,7 @@ import { ViewerComponent } from 'src/app/components/viewer/viewer.component';
 import { ClipboardDirective } from 'src/app/shared/directives/copy/clipboard.directive';
 import { PrismDirective } from 'src/app/shared/directives/prism/prism.directive';
 import { StatusBarDemoComponent } from './pages/status-bar-example/status-bar-demo/status-bar-demo.component';
+import { StepNextDirective, StepPreviousDirective } from 'ngx-obelisco/directives';
 
 @NgModule({
   declarations: [StatusBarComponent, StatusBarApiComponent, StatusBarExampleComponent, StatusBarDemoComponent],

@@ -1,6 +1,6 @@
 import { Directive, ElementRef, HostListener, OnDestroy, OnInit, Renderer2 } from '@angular/core';
 import { Subject, takeUntil } from 'rxjs';
-import { StepService } from 'ngx-obelisco/services';
+import { StepService } from 'ngx-obelisco/core/services';
 
 @Directive({
   selector: '[oStepPrevious]',

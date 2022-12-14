@@ -1,9 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { OAlertDirective } from 'ngx-obelisco/alert';
 import { OAccessModule } from 'projects/ngx-obelisco/access';
 import { ONavModule } from 'projects/ngx-obelisco/nav';
 import { OTableComponent } from 'projects/ngx-obelisco/table';
-import { OAlertDirective } from 'projects/ngx-obelisco/shared/directives/alert/alert.directive';
 import { BadPracticesComponent } from 'src/app/components/bad-practices/bad-practices.component';
 import { BestPracticesComponent } from 'src/app/components/best-practices/best-practices.component';
 import { ViewerComponent } from 'src/app/components/viewer/viewer.component';

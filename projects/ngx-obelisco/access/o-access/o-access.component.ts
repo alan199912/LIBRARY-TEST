@@ -1,5 +1,5 @@
 import { AfterViewInit, Component, ElementRef, Input, ViewChildren, QueryList, Renderer2 } from '@angular/core';
-import { Access } from 'ngx-obelisco/core';
+import { Access } from 'ngx-obelisco/core/models';
 
 @Component({
   selector: 'o-access',

@@ -2,8 +2,8 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Event, NavigationEnd, Router, RouterEvent, RouterModule } from '@angular/router';
 import { filter, startWith, Subject, takeUntil } from 'rxjs';
-import { BreadcrumbService } from 'ngx-obelisco/services';
-import { BreadcrumbRoute } from 'ngx-obelisco/core';
+import { BreadcrumbService } from 'ngx-obelisco/core/services';
+import { BreadcrumbRoute, Breadcrumb } from 'ngx-obelisco/core/models';
 
 @Component({
   selector: 'o-breadcrumb',
@@ -22,7 +22,7 @@ export class OBreadcrumbComponent implements OnInit, OnDestroy {
   constructor(private readonly router: Router, private readonly breadcrumbService: BreadcrumbService) {}
 
   ngOnInit(): void {
-    this.breadcrumbService.breadcrumb$.pipe(takeUntil(this.onDestroy$)).subscribe((breadcrumb) => {
+    this.breadcrumbService.breadcrumb$.pipe(takeUntil(this.onDestroy$)).subscribe((breadcrumb: Breadcrumb) => {
       if (
         Object.entries(breadcrumb).length !== 0 &&
         breadcrumb.routes.length !== 0 &&

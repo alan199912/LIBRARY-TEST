@@ -1,7 +1,8 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'dayMonthFormat'
+  name: 'dayMonthFormat',
+  standalone: true
 })
 export class DayMonthFormatPipe implements PipeTransform {
   transform(value: Date): string {

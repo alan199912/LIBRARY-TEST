@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
+import { Breadcrumb } from 'ngx-obelisco/core/models';
 import { BehaviorSubject } from 'rxjs';
-import { Breadcrumb } from 'ngx-obelisco/core';
 
 @Injectable({
   providedIn: 'root'

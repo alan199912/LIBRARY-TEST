@@ -1,5 +1,5 @@
 import { EventEmitter } from '@angular/core';
-import { StepService } from './step.service';
+import { StepService } from 'ngx-obelisco/core/services';
 
 export abstract class AbstractStep {
   protected stopSteps!: EventEmitter<boolean>;

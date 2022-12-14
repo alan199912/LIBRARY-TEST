@@ -1,6 +1,5 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { OAlertDirective } from 'projects/ngx-obelisco/shared/directives/alert/alert.directive';
 import { ONavModule } from 'projects/ngx-obelisco/nav';
 import { OTableComponent } from 'projects/ngx-obelisco/table';
 import { AlertRoutingModule } from './alert-routing.module';
@@ -14,6 +13,7 @@ import { AlertComponent } from './alert.component';
 import { AlertApiComponent } from './pages/alert-api/alert-api.component';
 import { AlertExamplesComponent } from './pages/alert-examples/alert-examples.component';
 import { AlertOverviewComponent } from './pages/alert-overview/alert-overview.component';
+import { OAlertDirective } from 'ngx-obelisco/alert';
 
 @NgModule({
   declarations: [AlertComponent, AlertOverviewComponent, AlertApiComponent, AlertExamplesComponent],

@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { Sizes } from 'ngx-obelisco/core';
+import { Sizes } from 'ngx-obelisco/core/models';
 @Component({
   selector: 'o-dropdown-toggle',
   templateUrl: './o-dropdown-toggle.component.html',

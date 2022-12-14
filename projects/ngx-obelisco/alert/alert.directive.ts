@@ -1,5 +1,5 @@
 import { OnInit, Directive, ElementRef, Input, Renderer2 } from '@angular/core';
-import { Colors } from 'ngx-obelisco/core';
+import { Colors } from 'ngx-obelisco/core/models';
 
 @Directive({
   selector: '[oAlert]',

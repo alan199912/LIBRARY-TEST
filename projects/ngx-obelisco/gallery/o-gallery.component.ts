@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
-import { Image } from 'ngx-obelisco/core';
-import { DefaultImageDirective } from 'ngx-obelisco/shared';
+import { Image } from 'ngx-obelisco/core/models';
+import { DefaultImageDirective } from 'ngx-obelisco/directives';
 
 @Component({
   selector: 'o-gallery',

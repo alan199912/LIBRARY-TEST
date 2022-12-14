@@ -1,5 +1,5 @@
 import { Component, Inject, OnInit } from '@angular/core';
-import { BreadcrumbService } from 'projects/ngx-obelisco/services/breadcrumb/breadcrumb.service';
+import { BreadcrumbService } from 'ngx-obelisco/core/services';
 import { BREADCRUMB_EXAMPLE_TS } from 'src/app/constants/breadcrumb.constants';
 
 @Component({

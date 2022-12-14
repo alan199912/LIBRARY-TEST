@@ -1,7 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { Option, OptionItem } from 'ngx-obelisco/core';
-import { Sizes } from 'ngx-obelisco/core';
+import { Option, OptionItem, Sizes } from 'ngx-obelisco/core/models';
 
 @Component({
   selector: 'o-option',

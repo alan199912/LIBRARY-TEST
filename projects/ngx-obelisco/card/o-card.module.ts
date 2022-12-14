@@ -2,7 +2,6 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
 import { RouterModule } from '@angular/router';
-import { DefaultImageDirective } from 'ngx-obelisco/shared';
 
 import { OCardContainerHorizontalComponent } from './o-card-container-horizontal/o-card-container-horizontal.component';
 import { OCardContainerComponent } from './o-card-container/o-card-container.component';
@@ -11,9 +10,8 @@ import { OCardEventComponent } from './o-card-event/o-card-event.component';
 import { OCardNoticeComponent } from './o-card-notice/o-card-notice.component';
 import { OCardSimpleHorizontalComponent } from './o-card-simple-horizontal/o-card-simple-horizontal.component';
 import { OCardSimpleComponent } from './o-card-simple/o-card-simple.component';
-import { DayMonthFormatPipe } from 'ngx-obelisco/shared';
-import { HoursFormatPipe } from 'ngx-obelisco/shared';
-import { NumberDayMonthFormatPipe } from 'ngx-obelisco/shared';
+import { DayMonthFormatPipe, HoursFormatPipe, NumberDayMonthFormatPipe } from 'ngx-obelisco/pipes';
+import { DefaultImageDirective } from 'ngx-obelisco/directives';
 
 @NgModule({
   declarations: [
@@ -23,11 +21,16 @@ import { NumberDayMonthFormatPipe } from 'ngx-obelisco/shared';
     OCardContainerHorizontalComponent,
     OCardNoticeComponent,
     OCardEventSimpleComponent,
-    OCardEventComponent,
+    OCardEventComponent
+  ],
+  imports: [
+    CommonModule,
+    RouterModule,
+    DefaultImageDirective,
+    NumberDayMonthFormatPipe,
     DayMonthFormatPipe,
     HoursFormatPipe
   ],
-  imports: [CommonModule, RouterModule, DefaultImageDirective, NumberDayMonthFormatPipe],
   exports: [
     OCardSimpleHorizontalComponent,
     OCardContainerComponent,
@@ -35,9 +38,7 @@ import { NumberDayMonthFormatPipe } from 'ngx-obelisco/shared';
     OCardContainerHorizontalComponent,
     OCardNoticeComponent,
     OCardEventSimpleComponent,
-    OCardEventComponent,
-    DayMonthFormatPipe,
-    HoursFormatPipe
+    OCardEventComponent
   ]
 })
 export class OCardModule {}
