@@ -1,5 +1,5 @@
 import { EventEmitter } from '@angular/core';
-import { StepService } from '../../services/step/step.service';
+import { StepService } from './step.service';
 
 export abstract class AbstractStep {
   protected stopSteps!: EventEmitter<boolean>;

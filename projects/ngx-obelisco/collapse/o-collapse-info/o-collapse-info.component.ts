@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { CollapseInfo } from '../../core/models/collapse.models';
+import { CollapseInfo } from 'ngx-obelisco/core';
 
 @Component({
   selector: 'o-collapse-info',

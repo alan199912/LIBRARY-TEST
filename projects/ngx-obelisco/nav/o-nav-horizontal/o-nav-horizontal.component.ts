@@ -1,6 +1,6 @@
 import { AfterViewInit, Component, ElementRef, Input, QueryList, Renderer2, ViewChildren } from '@angular/core';
-import { NavItems } from '../models/nav.models';
-import { Sizes } from '../models/sizes.models';
+import { NavItems } from 'ngx-obelisco/core';
+import { Sizes } from 'ngx-obelisco/core';
 
 @Component({
   selector: 'o-nav-horizontal',

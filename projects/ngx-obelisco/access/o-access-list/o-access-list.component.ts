@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Access, AccessCategory, AccessList } from '../../core/models/access.models';
+import { Access, AccessCategory, AccessList } from 'ngx-obelisco/core';
 
 @Component({
   selector: 'o-access-list',

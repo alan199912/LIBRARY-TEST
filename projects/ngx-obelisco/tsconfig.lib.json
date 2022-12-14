@@ -6,7 +6,17 @@
     "declaration": true,
     "declarationMap": true,
     "inlineSources": true,
-    "types": []
+    "types": [],
+    "paths": {
+      "ngx-obelisco": ["./index.ts"],
+      "ngx-obelisco/*": ["./*"]
+    }
   },
-  "exclude": ["src/test.ts", "**/*.spec.ts"]
+  "angularCompilerOptions": {
+    "paths": {
+      "ngx-obelisco": ["./index.ts"],
+      "ngx-obelisco/*": ["./*"]
+    }
+  },
+  "exclude": ["node_modules", "test.ts", "./**/*.spec.ts", "./*.spec.ts"]
 }

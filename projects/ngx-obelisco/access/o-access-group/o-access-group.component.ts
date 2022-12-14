@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { AccessGroup } from '../../core/models/access.models';
+import { AccessGroup } from 'ngx-obelisco/core';
 
 @Component({
   selector: 'o-access-group',

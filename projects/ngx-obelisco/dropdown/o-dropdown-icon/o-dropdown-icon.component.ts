@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { Sizes } from '../../core/models/sizes.models';
+import { Sizes } from 'ngx-obelisco/core';
 
 @Component({
   selector: 'o-dropdown-icon',

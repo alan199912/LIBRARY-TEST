@@ -1,8 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { Link, Network, Phone } from '../core/models/footer.models';
-import { DefaultImageDirective } from '../shared/directives/img-broken/img-broken.directive';
+import { Link, Network, Phone } from 'ngx-obelisco/core';
+import { DefaultImageDirective } from 'ngx-obelisco/shared';
 
 @Component({
   selector: 'o-footer',

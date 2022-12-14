@@ -17,7 +17,8 @@
     "moduleResolution": "node",
     "noImplicitAny": true,
     "paths": {
-      "ngx-obelisco-demo": ["dist/ngx-obelisco/obelisco", "dist/ngx-obelisco"]
+      "ngx-obelisco": ["projects/ngx-obelisco/index.ts"],
+      "ngx-obelisco/*": ["projects/ngx-obelisco/*"]
     },
     "importHelpers": true,
     "target": "es2017",

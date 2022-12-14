@@ -11,7 +11,7 @@ import {
   ViewChildren,
   Renderer2
 } from '@angular/core';
-import { Column } from './models/table.models';
+import { Column } from 'ngx-obelisco/core';
 
 @Component({
   selector: 'o-table',
