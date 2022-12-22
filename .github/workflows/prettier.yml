@@ -1,7 +1,7 @@
 name: prettier-action
 on:
   pull_request:
-    branches: [main]
+    branches: [master]
 
 jobs:
   prettier:
