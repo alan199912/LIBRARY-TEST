@@ -1,7 +1,7 @@
 name: eslint-action
 on:
   pull_request:
-    branches: [main]
+    branches: [master]
 
 jobs:
   eslint:
